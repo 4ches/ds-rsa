@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЭЦП - RSA</title>
+	<link rel="stylesheet" href="rsa.css">
+	<script src="sha256.js"></script>
+</head>
+<body>
+
+<div class="flex">
+	<div class="container">
+		<h1>ЭЦП по Алгоритму RSA</h1>
+		<label for="msg">Введите сообщение: </label><textarea class="msg" name="" id="msg" cols="37" rows="4" placeholder="Сообщение"></textarea>
+		<span class="next-arrow"> → </span><button class="next" id="sha">SHA256</button>
+		<div id="hashed" class="d-none"><span class="next-arrow"> → </span> Захэшированное сообщение = <span id="hashed-answer"> </span></div>
+		<div class="d-none keys">
+			<h2>Генерация ключей</h2>
+			<label for="p">Введите p: </label><input type="text" id="p" placeholder="p"><label for="q">Введите q: </label><input type="text" id="q" placeholder="q">
+		</div>
+
+	</div>
+</div>
+
+<script src="rsa.js"></script>	
+</body>
+</html>
